@@ -42,7 +42,7 @@ namespace DBFinalProject.UI
                 this.Hide();
                 break;*/
             case "Node3":
-                CreateOrEditExams exams = new CreateOrEditExams();
+                AddOrEditExamination exams = new AddOrEditExamination();
                 exams.Show();
                 this.Hide();
                 break;

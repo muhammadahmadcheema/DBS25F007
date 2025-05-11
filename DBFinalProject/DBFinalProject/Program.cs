@@ -20,9 +20,9 @@ namespace DBFinalProject
 
 
 
-            Application.Run(new AddOrEditExamination());
+            
 
-            //Application.Run(new Form1());
+            Application.Run(new Form1());
 
         }
     }
