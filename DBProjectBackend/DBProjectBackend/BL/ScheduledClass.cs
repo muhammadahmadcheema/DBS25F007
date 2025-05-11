@@ -7,28 +7,27 @@ using System.Data;
 
 namespace DBProjectBackend.BL
 {
-    class ScheduledClass
+    public class ScheduledClass
     {
         private int ScheduledClassID;
         private int RoomID;
-        private int FacultyCourseID;
-        private string Time;
-        private int TimeSlotID;
+        private int? FacultyCourseID;
+        private int? TimeSlotID;
 
-        public ScheduledClass(int RoomID, int FacultyCourseID, string Time, int TimeSlotID)
+        public ScheduledClass() { }
+
+        public ScheduledClass(int RoomID, int? FacultyCourseID, int? TimeSlotID)
         {
             this.RoomID = RoomID;
             this.FacultyCourseID = FacultyCourseID;
-            this.Time = Time;
             this.TimeSlotID = TimeSlotID;
         }
 
-        public ScheduledClass(int ScheduledClassID, int RoomID, int FacultyCourseID, string Time, int TimeSlotID)
+        public ScheduledClass(int ScheduledClassID, int RoomID, int? FacultyCourseID, int? TimeSlotID)
         {
             this.ScheduledClassID = ScheduledClassID;
             this.RoomID = RoomID;
             this.FacultyCourseID = FacultyCourseID;
-            this.Time = Time;
             this.TimeSlotID = TimeSlotID;
         }
 
@@ -58,15 +57,27 @@ namespace DBProjectBackend.BL
 
         public int GetScheduledClassID() { return ScheduledClassID; }
         public int GetRoomID() { return RoomID; }
-        public int GetFacultyCourseID() { return FacultyCourseID; }
-        public string GetTime() { return Time; }
-        public int GetTimeSlotID() { return TimeSlotID; }
+        public int? GetFacultyCourseID() { return FacultyCourseID; }
+        public int? GetTimeSlotID() { return TimeSlotID; }
 
         public void SetScheduledClassID(int id) { this.ScheduledClassID = id; }
         public void SetRoomID(int id) { this.RoomID = id; }
         public void SetFacultyCourseID(int id) { this.FacultyCourseID = id; }
-        public void SetTime(string time) { this.Time = time; }
         public void SetTimeSlotID(int id) { this.TimeSlotID = id; }
+
+        public List<object> GetScheduledClassNames()
+        {
+            DL.ScheduledClass sc = new DL.ScheduledClass();
+            List<object> scnames = sc.GetScheduledClassNamesFromDB();
+            return scnames;
+        }
+
+        public int GetScheduledClassID(int scname)
+        {
+            DL.ScheduledClass r1 = new DL.ScheduledClass();
+            return r1.GetScheduledClassIDFromDB(scname);
+        }
+
     }
 }
 

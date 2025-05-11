@@ -20,7 +20,7 @@ namespace DBFinalProject
 
 
 
-            
+            //Application.Run(new AddOrEditScheduleClass());
 
             Application.Run(new Form1());
 

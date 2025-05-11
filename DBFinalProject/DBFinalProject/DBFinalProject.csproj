@@ -130,6 +130,12 @@
     <Compile Include="UI\AddorEditRoom.Designer.cs">
       <DependentUpon>AddorEditRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\AddOrEditScheduleClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditScheduleClass.Designer.cs">
+      <DependentUpon>AddOrEditScheduleClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\AddOrEditSemester.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -207,6 +213,12 @@
     </Compile>
     <Compile Include="UI\StudentEnrollCourse.Designer.cs">
       <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentEnrollExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentEnrollExam.Designer.cs">
+      <DependentUpon>StudentEnrollExam.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Student_Enroll_Course.cs">
       <SubType>Form</SubType>
@@ -332,6 +344,9 @@
     <EmbeddedResource Include="UI\AddorEditRoom.resx">
       <DependentUpon>AddorEditRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditScheduleClass.resx">
+      <DependentUpon>AddOrEditScheduleClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\AddOrEditSemester.resx">
       <DependentUpon>AddOrEditSemester.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +382,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StudentEnrollCourse.resx">
       <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentEnrollExam.resx">
+      <DependentUpon>StudentEnrollExam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Student_Enroll_Course.resx">
       <DependentUpon>Student_Enroll_Course.cs</DependentUpon>
