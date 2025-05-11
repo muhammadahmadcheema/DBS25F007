@@ -69,8 +69,9 @@ namespace DBProjectBackend.DL
 
         public DataTable GetAllFacultyCoursesByNameFromDB(int studentid, int LoggedInUserDeptID, string coursename)
         {
-            string query = "SELECT fc.FacultyCourseID,c.Name AS CourseName,c.Type AS CourseType, c.CreditHours AS CourseCH, c.Fee AS CourseFee, d.Name AS DepartmentName, u.Name AS FacultyName,CONCAT(s.Term, ' ', s.Year) AS Semester,CASE WHEN se.StudentID IS NOT NULL THEN 1 ELSE 0 END AS IsEnrolled FROM facultycourses fc JOIN faculty f ON fc.facultyID = f.facultyID JOIN Course c ON fc.CourseID = c.CourseID JOIN Semester s ON fc.semesterID = s.SemesterID  JOIN user u ON u.userID = f.faculty_userID JOIN department d ON c.DepartmentID = d.DepartmentID LEFT JOIN studentCoursesEnrollment se ON se.facultyCourseID = fc.facultyCourseID AND se.StudentID = {0} LEFT JOIN student std ON u.userID = std.userID  WHERE c.status = '{1}' AND c.Name Like '{2}'   AND d.DepartmentID = {3} ORDER BY IsEnrolled DESC, CourseName";
-            query = String.Format(query,studentid,"Approved",coursename,LoggedInUserDeptID);
+            // string query = "SELECT fc.FacultyCourseID,c.Name AS CourseName,c.Type AS CourseType, c.CreditHours AS CourseCH, c.Fee AS CourseFee, d.Name AS DepartmentName, u.Name AS FacultyName,CONCAT(s.Term, ' ', s.Year) AS Semester,CASE WHEN se.StudentID IS NOT NULL THEN 1 ELSE 0 END AS IsEnrolled FROM facultycourses fc JOIN faculty f ON fc.facultyID = f.facultyID JOIN Course c ON fc.CourseID = c.CourseID JOIN Semester s ON fc.semesterID = s.SemesterID  JOIN user u ON u.userID = f.faculty_userID JOIN department d ON c.DepartmentID = d.DepartmentID LEFT JOIN studentCoursesEnrollment se ON se.facultyCourseID = fc.facultyCourseID AND se.StudentID = {0} LEFT JOIN student std ON u.userID = std.userID  WHERE c.status = '{1}' AND c.Name Like '{2}'   AND d.DepartmentID = {3} ORDER BY IsEnrolled DESC, CourseName";
+            string query = "Call GetAllFacultyCoursesByName({0},{1},'{2}')";
+            query = String.Format(query,studentid,LoggedInUserDeptID,coursename);
             return SqlHelper.getDataTable(query);
         }
 

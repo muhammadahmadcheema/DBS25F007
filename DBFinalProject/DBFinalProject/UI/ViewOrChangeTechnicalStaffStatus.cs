@@ -18,7 +18,7 @@ namespace DBFinalProject.UI
 
         private void LoadData()
         {
-            DBProjectBackend.BL.TechnicalStaff f = new DBProjectBackend.BL.TechnicalStaff();
+            DBProjectBackend.BL.TechnicalStaff f = new DBProjectBackend.BL.LogHandler();
             DataTable dt = f.GetTechnicalStaff();
 
             kryptonDataGridView1.DataSource = dt;
@@ -74,7 +74,7 @@ namespace DBFinalProject.UI
                 var result = MessageBox.Show($"Are you sure you want to mark this user as {newStatus}?", "Confirm", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
-                    DBProjectBackend.BL.Faculty f = new DBProjectBackend.BL.Faculty();
+                    DBProjectBackend.BL.TechnicalStaff f = new DBProjectBackend.BL.LogHandler();
                     bool success = f.UpdateUserStatus(id, newStatus);
                     if (success)
                     {

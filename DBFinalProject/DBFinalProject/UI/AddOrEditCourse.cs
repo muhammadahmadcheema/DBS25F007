@@ -135,7 +135,7 @@ namespace DBFinalProject.UI
 
                 //Fetch Course ID
                 DBProjectBackend.BL.Course bl2 = new DBProjectBackend.BL.Course();
-                int CourseID = bl2.GetPrerequisiteCourseID(prerequisiteCourse);
+                int CourseID = bl2.GetCourseID(editCourse);
 
                 DBProjectBackend.BL.Course course = new DBProjectBackend.BL.Course(CourseID, courseName, creditHours, courseType, courseFee,preCourseID);
                 bool flag = course.UpdateCourse(course);

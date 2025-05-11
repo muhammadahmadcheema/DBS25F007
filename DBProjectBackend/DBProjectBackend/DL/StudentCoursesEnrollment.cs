@@ -11,8 +11,7 @@ namespace DBProjectBackend.DL
     {
         public bool AddEnrollmentToDB(BL.StudentCoursesEnrollment obj)
         {
-            string query = "INSERT INTO StudentCoursesEnrollment (StudentID, FacultyCourseID) " +
-                           "VALUES ({0}, {1})";
+            string query = "Call AddStudentCoursesEnrollment({0},{1})";
             query = string.Format(query, obj.GetStudentID(), obj.GetFacultyCourseID());
             int rows = SqlHelper.executeDML(query);
             return rows > 0;
@@ -39,6 +38,8 @@ namespace DBProjectBackend.DL
             object id = SqlHelper.ExecuteScalar(query);
             return (int)id;
         }
+
+        
     }
 }
 

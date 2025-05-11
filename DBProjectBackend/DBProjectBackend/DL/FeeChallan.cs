@@ -54,8 +54,9 @@ namespace DBProjectBackend.DL
 
         public bool UpdateChallanStatusInDB(int id, string newStatus)
         {
-            string query = "Update feechallan Set Status = '{0}' Where ChallanID = {1}";
-            query = String.Format(query, newStatus, id);
+            // string query = "Update feechallan Set Status = '{0}' Where ChallanID = {1}";
+            string query = "Call UpdateChallanStatus({0},'{1}')";
+            query = String.Format(query, id, newStatus);
             int rowsAffected = SqlHelper.executeDML(query);
             if (rowsAffected > 0)
             {

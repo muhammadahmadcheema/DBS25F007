@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Org.BouncyCastle.Asn1.Mozilla;
+using DBProjectBackend.DL;
 
 namespace DBProjectBackend.BL
 {
@@ -55,6 +56,8 @@ namespace DBProjectBackend.BL
             DL.StudentCoursesEnrollment dl = new DL.StudentCoursesEnrollment();
             return dl.GetStudentCourseEnrollmentsFromDB(fcid);
         }
+
+        
     }
 }
 

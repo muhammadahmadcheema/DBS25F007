@@ -111,6 +111,7 @@
     <Compile Include="BL\FeeChallan.cs" />
     <Compile Include="BL\Grade.cs" />
     <Compile Include="BL\LoggedInUser.cs" />
+    <Compile Include="BL\LogHandler.cs" />
     <Compile Include="BL\Room.cs" />
     <Compile Include="BL\ScheduledClass.cs" />
     <Compile Include="BL\Semester.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="DL\FacultyCourses.cs" />
     <Compile Include="DL\FeeChallan.cs" />
     <Compile Include="DL\Grade.cs" />
+    <Compile Include="DL\LogHandler.cs" />
     <Compile Include="DL\Room.cs" />
     <Compile Include="DL\ScheduledClass.cs" />
     <Compile Include="DL\Semester.cs" />

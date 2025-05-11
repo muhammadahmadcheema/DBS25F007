@@ -47,5 +47,13 @@ namespace DBProjectBackend.DL
             int rowsAffected = SqlHelper.executeDML(query);
             return rowsAffected > 0;
         }
+
+        public DataTable GetAllExamsWithEnrollmentStatusFromDB(int studentID, int departmentID)
+        {
+            string query = "Call GetAllExamsForEnrollment({0},{1})"; 
+            query = String.Format(query, studentID, departmentID);
+            return SqlHelper.getDataTable(query);
+        }
+
     }
 }

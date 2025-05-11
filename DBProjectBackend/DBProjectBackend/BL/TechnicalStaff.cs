@@ -7,12 +7,12 @@ using System.Data;
 using DBProjectBackend.DL;
 namespace DBProjectBackend.BL
 {
-    public class TechnicalStaff : User
+    public abstract class TechnicalStaff : User
     {
-        private int TechnicalStaffID;
-        private string HireDate;
-        private string Specialization;
-        private int User_ID;
+        protected int TechnicalStaffID;
+        protected string HireDate;
+        protected string Specialization;
+        protected int User_ID;
 
         public TechnicalStaff() { }
 
@@ -34,12 +34,8 @@ namespace DBProjectBackend.BL
         public string GetSpecialization() { return Specialization; }
         public int GetUserID() { return User_ID; }
 
-        public override List<object> GetUserNames()
-        {
-            DL.TechnicalStaff dl = new DL.TechnicalStaff();
-            List<object> userNames = dl.GetTechnicalStaffUserNamesFromDB();
-            return userNames;
-        }
+        public abstract override List<object> GetUserNames();
+
 
         public void SetTechnicalStaffID(int id) { this.TechnicalStaffID = id; }
         public void SetHireDate(string date) { this.HireDate = date; }

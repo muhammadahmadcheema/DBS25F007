@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using DBProjectBackend.DL;
 
 namespace DBProjectBackend.BL
 {
@@ -163,6 +164,12 @@ namespace DBProjectBackend.BL
         public void SetDuration(string duration)
         {
             Duration = duration;
+        }
+
+        public DataTable GetAllExamsWithEnrollmentStatus(int studentID, int departmentID)
+        {
+            DL.Examination dl = new DL.Examination();
+            return dl.GetAllExamsWithEnrollmentStatusFromDB(studentID, departmentID);
         }
     }
 }

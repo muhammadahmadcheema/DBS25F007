@@ -40,11 +40,13 @@ namespace DBProjectBackend.BL
             this.PrerequisiteCourseID = PreRequisiteCourseID;
         }
 
-        public int GetPrerequisiteCourseID(string CourseName)
+        public int? GetPrerequisiteCourseID(string CourseName)
         {
             DL.Course dl = new DL.Course();
             return dl.GetPrerequisiteCourseIDFromDB(CourseName);
         }
+
+        
 
         public bool AddCourse(BL.Course c)
         {
