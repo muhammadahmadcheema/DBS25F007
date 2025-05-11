@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Attendance.cs" />
     <Compile Include="BL\Course.cs" />
     <Compile Include="BL\Department.cs" />
     <Compile Include="BL\DepartmentHead.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="BL\Timetable.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="DL\Attendance.cs" />
     <Compile Include="DL\Course.cs" />
     <Compile Include="DL\Department.cs" />
     <Compile Include="DL\DepartmentHead.cs" />

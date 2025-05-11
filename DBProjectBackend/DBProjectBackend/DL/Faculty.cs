@@ -77,7 +77,15 @@ namespace DBProjectBackend.DL
             query = String.Format(query, facultyName);
             object id = SqlHelper.ExecuteScalar(query);
             return (int)id;
-        }        
+        }
+
+        public int GetFacultyIDFromDBForAttendance(int userID)
+        {
+            string query = "Select s.FacultyID From faculty s WHere s.faculty_UserID = {0}";
+            query = String.Format(query, userID);
+            object id = SqlHelper.ExecuteScalar(query);
+            return (int)id;
+        }
 
 
     }

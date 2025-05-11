@@ -53,6 +53,9 @@
     <Reference Include="DBProjectBackend">
       <HintPath>..\..\DBProjectBackend\DBProjectBackend\bin\Debug\DBProjectBackend.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\..\..\..\Second Semester\DB\DB LAB\MID PROJECT\UI\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -87,6 +90,12 @@
     </Compile>
     <Compile Include="UI\AddOrEditAdmin.Designer.cs">
       <DependentUpon>AddOrEditAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditAttendance.Designer.cs">
+      <DependentUpon>AddOrEditAttendance.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\AddOrEditCourse.cs">
       <SubType>Form</SubType>
@@ -202,6 +211,18 @@
     <Compile Include="UI\GenerateFeeChallan.Designer.cs">
       <DependentUpon>GenerateFeeChallan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\GradeSubmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GradeSubmission.Designer.cs">
+      <DependentUpon>GradeSubmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Report1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\StudentDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +252,12 @@
     </Compile>
     <Compile Include="UI\TechnicalStaffDashboard.Designer.cs">
       <DependentUpon>TechnicalStaffDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TestReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TestReport.Designer.cs">
+      <DependentUpon>TestReport.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Timetable.cs">
       <SubType>Form</SubType>
@@ -323,6 +350,9 @@
     <EmbeddedResource Include="UI\AddOrEditAdmin.resx">
       <DependentUpon>AddOrEditAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditAttendance.resx">
+      <DependentUpon>AddOrEditAttendance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\AddOrEditCourse.resx">
       <DependentUpon>AddOrEditCourse.cs</DependentUpon>
     </EmbeddedResource>
@@ -377,6 +407,12 @@
     <EmbeddedResource Include="UI\GenerateFeeChallan.resx">
       <DependentUpon>GenerateFeeChallan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\GradeSubmission.resx">
+      <DependentUpon>GradeSubmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\StudentDashboard.resx">
       <DependentUpon>StudentDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -391,6 +427,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TechnicalStaffDashboard.resx">
       <DependentUpon>TechnicalStaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TestReport.resx">
+      <DependentUpon>TestReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Timetable.resx">
       <DependentUpon>Timetable.cs</DependentUpon>
