@@ -159,7 +159,13 @@ namespace DBProjectBackend.BL
             DL.Faculty dl = new DL.Faculty();
             List<object> userNames = dl.GetFacultyUserNamesFromDB();
             return userNames;
-        }        
+        }
+
+        public int GetFacultyIDForAttendance(int userID)
+        {
+            DL.Faculty dl = new DL.Faculty();
+            return dl.GetFacultyIDFromDBForAttendance(userID);
+        }
 
     }
 }
