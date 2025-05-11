@@ -118,6 +118,7 @@
     <Compile Include="BL\StudentCoursesEnrollment.cs" />
     <Compile Include="BL\StudentEnrolledExam.cs" />
     <Compile Include="BL\TechnicalStaff.cs" />
+    <Compile Include="BL\Timetable.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="DL\Course.cs" />
@@ -135,6 +136,7 @@
     <Compile Include="DL\StudentCoursesEnrollment.cs" />
     <Compile Include="DL\StudentEnrolledExam.cs" />
     <Compile Include="DL\TechnicalStaff.cs" />
+    <Compile Include="DL\Timetable.cs" />
     <Compile Include="DL\User.cs" />
     <Compile Include="HashingHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

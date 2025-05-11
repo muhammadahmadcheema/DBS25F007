@@ -117,6 +117,11 @@ namespace DBFinalProject.UI
                     removeSemester.Show();
                     this.Hide();
                     break;
+                case "Node19":
+                    GenerateFeeChallan feechallan = new GenerateFeeChallan();
+                    feechallan.Show();
+                    this.Hide();
+                    break;
                 case "Node21":
                     AddOrEditDepartments departments = new AddOrEditDepartments();
                     departments.Show();
@@ -142,7 +147,12 @@ namespace DBFinalProject.UI
                     facultyCourse.Show();
                     this.Hide();
                     break;
-                
+                case "Node25":
+                    UI.Timetable timetable = new UI.Timetable();
+                    timetable.Show();
+                    this.Hide();
+                    break;
+
             }
         }
     }
