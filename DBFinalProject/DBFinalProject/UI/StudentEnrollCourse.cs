@@ -48,6 +48,8 @@ namespace DBFinalProject.UI
             DataTable dt = courseManager.GetAllCoursesWithEnrollmentStatus(studentID, departmentID);
 
             kryptonDataGridView1.DataSource = dt;
+            kryptonDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            kryptonDataGridView1.Dock = DockStyle.Fill;
 
             // Add Enroll/Unenroll Button Column if it doesn't already exist
             if (!kryptonDataGridView1.Columns.Contains("btnEnroll"))

@@ -56,6 +56,15 @@ namespace DBFinalProject.UI
                     deptForm.Show();
                     this.Hide();
                     break;
+                case "Node6":
+                    var examForm = new StudentEnrollExam();
+                    examForm.FormClosed += (s, args) =>
+                    {
+                        this.Show();
+                    };
+                    examForm.Show();
+                    this.Hide();
+                    break;
             }
 
         }

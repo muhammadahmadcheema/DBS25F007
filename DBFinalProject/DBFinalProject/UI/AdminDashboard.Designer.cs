@@ -56,7 +56,7 @@
             System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("View/ Remove Rooms");
             System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Add/Edit Semesters");
             System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("View/ Remove Semesters");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Generate / Edit Fee Challan");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Generate Fee Challan");
             System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Generate Reports");
             System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("AddOrEditDepartment");
             System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("ViewOrRemoveDepartment");
@@ -64,6 +64,7 @@
             System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("ViewOrRemoveGrade");
             System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Generate/ EditTimetable");
             System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Assign Course to Faculty");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("View Or Change Challan Status");
             this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
             this.kryptonHeader2 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -158,7 +159,7 @@
             treeNode18.Name = "Node18";
             treeNode18.Text = "View/ Remove Semesters";
             treeNode19.Name = "Node19";
-            treeNode19.Text = "Generate / Edit Fee Challan";
+            treeNode19.Text = "Generate Fee Challan";
             treeNode20.Name = "Node20";
             treeNode20.Text = "Generate Reports";
             treeNode21.Name = "Node21";
@@ -173,6 +174,8 @@
             treeNode25.Text = "Generate/ EditTimetable";
             treeNode26.Name = "Node26";
             treeNode26.Text = "Assign Course to Faculty";
+            treeNode27.Name = "Node27";
+            treeNode27.Text = "View Or Change Challan Status";
             this.kryptonTreeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode6,
             treeNode12,
@@ -189,7 +192,8 @@
             treeNode23,
             treeNode24,
             treeNode25,
-            treeNode26});
+            treeNode26,
+            treeNode27});
             this.kryptonTreeView1.Size = new System.Drawing.Size(215, 330);
             this.kryptonTreeView1.StateCommon.Back.Color1 = System.Drawing.Color.AliceBlue;
             this.kryptonTreeView1.StateCommon.Node.Content.ShortText.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

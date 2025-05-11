@@ -152,6 +152,11 @@ namespace DBFinalProject.UI
                     timetable.Show();
                     this.Hide();
                     break;
+                case "Node27":
+                    UI.ViewOrChangeChallanStatus challan = new UI.ViewOrChangeChallanStatus();
+                    challan.Show();
+                    this.Hide();
+                    break;
 
             }
         }

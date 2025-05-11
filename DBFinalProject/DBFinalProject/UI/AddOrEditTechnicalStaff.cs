@@ -35,7 +35,7 @@ namespace DBFinalProject.UI
                 string specialization = txtspecialization.Text.ToString().Trim();
 
 
-                DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.TechnicalStaff(Password, CNIC, username, email, DOB, phone, role, Name, hiredate, specialization);
+                DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.LogHandler(Password, CNIC, username, email, DOB, phone, role, Name, hiredate, specialization);
                 bool flag = ts.AddTechnicalStaff(ts);
 
                 if (flag)
@@ -51,7 +51,7 @@ namespace DBFinalProject.UI
 
         private void bindcmbUserNameEdit()
         {
-            DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.TechnicalStaff();
+            DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.LogHandler();
             List<object> usernames = ts.GetUserNames();
             cmbedituser.DataSource = usernames;
             cmbedituser.SelectedIndex = -1;
@@ -78,7 +78,7 @@ namespace DBFinalProject.UI
                 User bl1 = new User();
                 int userID = bl1.GetUserID(editUserName);
 
-                DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.TechnicalStaff(userID, Password, CNIC, username, email, DOB, phone,Name, hiredate, specialization);
+                DBProjectBackend.BL.TechnicalStaff ts = new DBProjectBackend.BL.LogHandler(userID, Password, CNIC, username, email, DOB, phone,Name, hiredate, specialization);
                 bool flag = ts.UpdateTechnicalStaff(ts);
 
                 if (flag)

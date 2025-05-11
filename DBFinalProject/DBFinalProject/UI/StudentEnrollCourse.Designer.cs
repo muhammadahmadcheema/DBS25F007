@@ -57,9 +57,9 @@
             this.tableLayoutPanel3.Location = new System.Drawing.Point(223, 80);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.47851F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.42857F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 69.14286F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.12717F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.11984F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.753F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(576, 373);
             this.tableLayoutPanel3.TabIndex = 25;
@@ -69,7 +69,7 @@
             // 
             this.kryptonHeader3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonHeader3.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Custom1;
-            this.kryptonHeader3.Location = new System.Drawing.Point(197, 15);
+            this.kryptonHeader3.Location = new System.Drawing.Point(197, 14);
             this.kryptonHeader3.Name = "kryptonHeader3";
             this.kryptonHeader3.Size = new System.Drawing.Size(181, 31);
             this.kryptonHeader3.TabIndex = 1;
@@ -83,9 +83,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(3, 111);
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(3, 116);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(570, 237);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(570, 233);
             this.kryptonDataGridView1.TabIndex = 2;
             this.kryptonDataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellClick_1);
             this.kryptonDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.kryptonDataGridView1_CellContentClick);
@@ -103,12 +103,12 @@
             this.tableLayoutPanel4.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtCourseName, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.kryptonButton1, 2, 0);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 64);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 63);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(570, 41);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(570, 47);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // pictureBox1
@@ -119,7 +119,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -127,7 +127,7 @@
             // txtCourseName
             // 
             this.txtCourseName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCourseName.Location = new System.Drawing.Point(55, 10);
+            this.txtCourseName.Location = new System.Drawing.Point(55, 13);
             this.txtCourseName.Name = "txtCourseName";
             this.txtCourseName.Size = new System.Drawing.Size(310, 20);
             this.txtCourseName.TabIndex = 1;
@@ -137,7 +137,7 @@
             this.kryptonButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.kryptonButton1.Location = new System.Drawing.Point(389, 3);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(171, 35);
+            this.kryptonButton1.Size = new System.Drawing.Size(171, 41);
             this.kryptonButton1.TabIndex = 2;
             this.kryptonButton1.Values.Text = "Search";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);

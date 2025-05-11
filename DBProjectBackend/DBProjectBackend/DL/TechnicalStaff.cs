@@ -8,9 +8,7 @@ using System.Data;
 namespace DBProjectBackend.DL
 {
     class TechnicalStaff
-    {
-        
-
+    {        
         public bool AddToDB(BL.TechnicalStaff f)
         {
             string query = "Insert into technicalstaff(HireDate,Specialization,User_ID) Values ('{0}','{1}',{2})";

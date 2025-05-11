@@ -34,7 +34,7 @@
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("View Timetable");
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("View / Print Fee Challan");
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("View Results");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("View Enrolled Courses");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Enroll Exam");
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -121,7 +121,7 @@
             treeNode6.Name = "Node5";
             treeNode6.Text = "View Results";
             treeNode7.Name = "Node6";
-            treeNode7.Text = "View Enrolled Courses";
+            treeNode7.Text = "Enroll Exam";
             this.kryptonTreeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,

@@ -29,8 +29,9 @@ namespace DBProjectBackend.DL
 
         public bool UpdateCoursetoDB(BL.Course course)
         {
-            string updateQuery = "UPDATE course SET Name = '{0}',CreditHours = '{1}',Type = '{2}', Fee = '{3}',PrerequisiteCourseID = '{4}' Where CourseID = {5}";
-            updateQuery = String.Format(updateQuery, course.GetName(), course.GetCreditHours(), course.GetType(), course.GetFee(), course.GetPrerequisiteCourseID(), course.GetCourseID());
+            string preCourseValue = course.GetPrerequisiteCourseID().HasValue ? course.GetPrerequisiteCourseID().Value.ToString() : "NULL";
+            string updateQuery = "UPDATE course SET Name = '{0}',CreditHours = '{1}',Type = '{2}', Fee = '{3}',PrerequisiteCourseID = {4} Where CourseID = {5}";
+            updateQuery = String.Format(updateQuery, course.GetName(), course.GetCreditHours(), course.GetType(), course.GetFee(), preCourseValue, course.GetCourseID());
             int rowsAffected = SqlHelper.executeDML(updateQuery);
 
             if (rowsAffected > 0)
@@ -48,12 +49,12 @@ namespace DBProjectBackend.DL
             return rowsAffected > 0;
         }
 
-        public int GetPrerequisiteCourseIDFromDB(string CourseName)
+        public int? GetPrerequisiteCourseIDFromDB(string CourseName)
         {
             string query = "Select CourseID From course Where Name = '{0}'";
             query = String.Format(query, CourseName);
             object id = SqlHelper.ExecuteScalar(query);
-            return (int)id;
+            return (int?)id;
         }
 
         public List<object> GetCourseNamesFromDB()

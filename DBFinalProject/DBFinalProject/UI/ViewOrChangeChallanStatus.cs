@@ -24,6 +24,8 @@ namespace DBFinalProject.UI
             DataTable dt = f.GetFeeChallan();
 
             kryptonDataGridView1.DataSource = dt;
+            kryptonDataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            kryptonDataGridView1.Dock = DockStyle.Fill;
 
             // Add Unpaid Button Column
             if (!kryptonDataGridView1.Columns.Contains("btnUnpaid"))
