@@ -1,0 +1,28 @@
+# Ignore Visual Studio temporary files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build results
+bin/
+obj/
+*.dll
+*.exe
+*.cache
+*.cac
+*.pdb
+
+# Backup & log files
+*.log
+*.bak
+*.backup.json
+*.tmp
+
+# Ignore project-specific settings
+*.csproj.user
+*.dbmdl
+
+# Ignore design-time temporary files
+*.DesignTimeResolveAssemblyReferencesInput.cache

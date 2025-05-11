@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA2B86A3-0853-4707-AA1A-DA71C30EBCC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBFinalProject</RootNamespace>
+    <AssemblyName>DBFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>C:\Users\hi\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\hi\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>C:\Users\hi\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\hi\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\hi\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="DBProjectBackend">
+      <HintPath>..\..\DBProjectBackend\DBProjectBackend\bin\Debug\DBProjectBackend.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemeForm.Designer.cs">
+      <DependentUpon>ThemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditAdmin.Designer.cs">
+      <DependentUpon>AddOrEditAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditCourse.Designer.cs">
+      <DependentUpon>AddOrEditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditDepartmentHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditDepartmentHead.Designer.cs">
+      <DependentUpon>AddOrEditDepartmentHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditDepartments.Designer.cs">
+      <DependentUpon>AddOrEditDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditExamination.Designer.cs">
+      <DependentUpon>AddOrEditExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditFaculty.Designer.cs">
+      <DependentUpon>AddOrEditFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditGrade.Designer.cs">
+      <DependentUpon>AddOrEditGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddorEditRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddorEditRoom.Designer.cs">
+      <DependentUpon>AddorEditRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditSemester.Designer.cs">
+      <DependentUpon>AddOrEditSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditStudent.Designer.cs">
+      <DependentUpon>AddOrEditStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AddOrEditTechnicalStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AddOrEditTechnicalStaff.Designer.cs">
+      <DependentUpon>AddOrEditTechnicalStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ApproveCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ApproveCourses.Designer.cs">
+      <DependentUpon>ApproveCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AssignCoursetoFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AssignCoursetoFaculty.Designer.cs">
+      <DependentUpon>AssignCoursetoFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreateOrEditExams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateOrEditExams.Designer.cs">
+      <DependentUpon>CreateOrEditExams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DepartmentHeadDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DepartmentHeadDashboard.Designer.cs">
+      <DependentUpon>DepartmentHeadDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FacultyDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FacultyDashboard.Designer.cs">
+      <DependentUpon>FacultyDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GenerateFeeChallan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GenerateFeeChallan.Designer.cs">
+      <DependentUpon>GenerateFeeChallan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentDashboard.Designer.cs">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StudentEnrollCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StudentEnrollCourse.Designer.cs">
+      <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Student_Enroll_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Student_Enroll_Course.Designer.cs">
+      <DependentUpon>Student_Enroll_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TechnicalStaffDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TechnicalStaffDashboard.Designer.cs">
+      <DependentUpon>TechnicalStaffDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeAdminStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeAdminStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeAdminStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeChallanStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeChallanStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeChallanStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeDepartmentHeadStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeDepartmentHeadStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeDepartmentHeadStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeFacultyStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeFacultyStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeFacultyStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeStudentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeStudentStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeStudentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeTechnicalStaffStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrChangeTechnicalStaffStatus.Designer.cs">
+      <DependentUpon>ViewOrChangeTechnicalStaffStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveCourse.Designer.cs">
+      <DependentUpon>ViewOrRemoveCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveDepartment.Designer.cs">
+      <DependentUpon>ViewOrRemoveDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveGrade.Designer.cs">
+      <DependentUpon>ViewOrRemoveGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveRoom.Designer.cs">
+      <DependentUpon>ViewOrRemoveRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewOrRemoveSemester.Designer.cs">
+      <DependentUpon>ViewOrRemoveSemester.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThemeForm.resx">
+      <DependentUpon>ThemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditAdmin.resx">
+      <DependentUpon>AddOrEditAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditCourse.resx">
+      <DependentUpon>AddOrEditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditDepartmentHead.resx">
+      <DependentUpon>AddOrEditDepartmentHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditDepartments.resx">
+      <DependentUpon>AddOrEditDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditExamination.resx">
+      <DependentUpon>AddOrEditExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditFaculty.resx">
+      <DependentUpon>AddOrEditFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditGrade.resx">
+      <DependentUpon>AddOrEditGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddorEditRoom.resx">
+      <DependentUpon>AddorEditRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditSemester.resx">
+      <DependentUpon>AddOrEditSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditStudent.resx">
+      <DependentUpon>AddOrEditStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AddOrEditTechnicalStaff.resx">
+      <DependentUpon>AddOrEditTechnicalStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ApproveCourses.resx">
+      <DependentUpon>ApproveCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AssignCoursetoFaculty.resx">
+      <DependentUpon>AssignCoursetoFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreateOrEditExams.resx">
+      <DependentUpon>CreateOrEditExams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DepartmentHeadDashboard.resx">
+      <DependentUpon>DepartmentHeadDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FacultyDashboard.resx">
+      <DependentUpon>FacultyDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GenerateFeeChallan.resx">
+      <DependentUpon>GenerateFeeChallan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentDashboard.resx">
+      <DependentUpon>StudentDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StudentEnrollCourse.resx">
+      <DependentUpon>StudentEnrollCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Student_Enroll_Course.resx">
+      <DependentUpon>Student_Enroll_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TechnicalStaffDashboard.resx">
+      <DependentUpon>TechnicalStaffDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeAdminStatus.resx">
+      <DependentUpon>ViewOrChangeAdminStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeChallanStatus.resx">
+      <DependentUpon>ViewOrChangeChallanStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeDepartmentHeadStatus.resx">
+      <DependentUpon>ViewOrChangeDepartmentHeadStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeFacultyStatus.resx">
+      <DependentUpon>ViewOrChangeFacultyStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeStudentStatus.resx">
+      <DependentUpon>ViewOrChangeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrChangeTechnicalStaffStatus.resx">
+      <DependentUpon>ViewOrChangeTechnicalStaffStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrRemoveCourse.resx">
+      <DependentUpon>ViewOrRemoveCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrRemoveDepartment.resx">
+      <DependentUpon>ViewOrRemoveDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrRemoveGrade.resx">
+      <DependentUpon>ViewOrRemoveGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrRemoveRoom.resx">
+      <DependentUpon>ViewOrRemoveRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewOrRemoveSemester.resx">
+      <DependentUpon>ViewOrRemoveSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BL\" />
+    <Folder Include="DL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-admissions-training-course-flyer-image_254831.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
